@@ -1,0 +1,167 @@
+//---Import-Fonts--//
+
+
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+
+
+//---Variables---//
+$white: #FFFFFF;
+$highlight:#7ac483;
+$grey_background: #f2f1f8;
+$grey_copy: #b9b7c6;
+$dark_grey: #3f3d4e;
+
+
+
+//---Global Styles---//
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Josefin Sans' ,Helvetica, sans-serif;
+
+}
+
+.wrapper{
+    width: 1440px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.button{
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    padding: .6rem 2rem;
+    font-weight: 700;
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+    transition: all .25s;
+    &:hover{
+        box-shadow: 0 0 2px .5px white;
+    }
+}
+
+.button_highlight {
+    background: $highlight;
+}
+.button_secondary{
+    background: rgba(250, 250, 250, 0.35);
+}
+.button_small{
+    padding: .3rem 1.5rem;
+}
+
+.cf:after,
+.cf:before{
+    content: " ";
+    display: table;
+}
+.cf:after{
+    clear: both;
+}
+
+//------ Banner Styles ------//
+
+
+#banner {
+    background-image: url('images/bannerbackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 960px;
+
+    header{
+        padding: 2rem 0;
+    }
+    #logo{
+        color: $white;
+        font-weight: 700;
+        font-size: 1.5rem;
+        float: left;
+        margin: 0;
+        letter-spacing: .5px;
+        line-height: 1.2rem;
+        span{
+            font-weight: 300;
+            font-size: 2.5rem;
+        }
+        #name{
+            font-size: .9rem;
+            margin-left: 2.5rem;
+        }
+    }
+    nav{
+        float: right;
+        a{
+            color: $white;
+            font-weight: 700;
+            text-decoration: none;
+            margin-left: 2rem;
+        }
+    }
+    .content{
+        padding: 10rem 0 6rem 0;
+        .title, .sub_title{
+            color: $white;
+            text-align: center;
+        }
+        .title{
+            font-size: 4rem;
+            margin:0;
+            font-weight: 500;
+        }
+        .sub_title{
+            font-weight: 300;
+            font-size: 2rem;
+            //width: 300px;
+            margin: 2rem auto 1rem auto;
+            line-height: 2rem;
+        }
+        .button_wrapper{
+            text-align: center;
+            margin: 3rem 0;
+            .button{
+                margin: 0 .75rem;
+            }
+        }
+    }
+    img{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+//------ Services Styles ------//
+
+#services{
+    background:$grey_background;
+    padding:2rem 0 6.5rem 0;
+    position: relative;
+    .service{
+        background: $white;
+        width: 31%;
+        float: left;
+        margin: -5rem 1% 0 1%;
+        padding: 3rem 2.5%;
+        text-align: center;
+        position: relative;
+        box-shadow: 2px 3.464px 57px 0px rgb( 0, 0, 0 );
+        border-radius: .35rem;
+    }
+    h3{
+        margin: 0;
+        font-size: 1.5rem;
+        color: $dark_grey;
+    }
+    p{
+        margin: 0 0 2rem 0;
+        color: $dark_grey;
+    }
+    .button{
+        padding: .5rem 2rem;
+    }
+}
